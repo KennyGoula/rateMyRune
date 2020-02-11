@@ -1,0 +1,56 @@
+easy_admin:
+    site_name: 'Rate My Rune'
+    list:
+        actions:
+        - {name: 'edit', label: 'Editer'}
+        - {name: 'delete', label: 'Supprimer'}
+        - {name: 'new', label: 'Nouveau'}
+        - {name: 'search', label: 'Rechercher'}
+
+    entities:
+        RuneSetName:
+            label: 'Sets de runes'
+            list: 
+                title: 'Sets de runes'
+            edit:
+                title: 'Modifier le Set'         
+            class: App\Entity\RuneSetName
+            form:
+                fields: 
+                    - {property: 'name'}
+        Rune:
+            label: 'Runes'
+            list: 
+                title: 'Runes'
+            edit:
+                title: 'Modifier la rune'
+            class: App\Entity\Rune
+        RarityName:
+            label: 'Raretés'
+            list: 
+                title: 'Raretés'
+            edit:
+                title: 'Modifier la rareté'
+            class: App\Entity\RarityName
+            form:
+                fields:
+                    - {property: 'name'}
+        StatName:
+            label: 'Stats'
+            list: 
+                title: 'Stats'
+            edit:
+                title: 'Modifier la stat'
+            class: App\Entity\StatName
+            form:
+                fields:
+                    - {property: 'name'}
+        Monster:
+            label: 'Monstres'
+            list: 
+                title: 'Monstres'
+            edit:
+                title: 'Modifier le monstre'
+            class: App\Entity\Monster
+            
+
