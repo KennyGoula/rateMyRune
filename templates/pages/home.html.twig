@@ -1,0 +1,26 @@
+{% extends 'base.html.twig'  %}
+
+{% block title "Accueil" %}
+
+{% block body %}
+    <div class="jumbotron text-center">
+        <h1>Rate My Rune</h1>
+        <p>Aide les autres joueurs à évaluer leurs runes</p>
+    </div>
+    <div class="container">
+        <h2>Rate cette rune !</h2>
+        <div class="row flex">
+            {% for rune in runes %}
+            <div class="col-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <a href="#">{{rune.runeSet}}</a>
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}
